@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIMFashion.UI", "BIMFashion.UI\BIMFashion.UI.csproj", "{3315D5B3-E507-4B64-9A15-E6B11054C380}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSG.UI", "OSG.UI\OSG.UI.csproj", "{3315D5B3-E507-4B64-9A15-E6B11054C380}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BIMFashion.NET", "BIMFashion.NET\BIMFashion.NET.vcxproj", "{6638C0D3-D5CF-44F0-B2FE-0B2F38976620}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OSG.NET", "OSG.NET\OSG.NET.vcxproj", "{6638C0D3-D5CF-44F0-B2FE-0B2F38976620}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,10 @@ Global
 		{3315D5B3-E507-4B64-9A15-E6B11054C380}.Debug|x86.Build.0 = Debug|x86
 		{3315D5B3-E507-4B64-9A15-E6B11054C380}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3315D5B3-E507-4B64-9A15-E6B11054C380}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3315D5B3-E507-4B64-9A15-E6B11054C380}.Release|x64.ActiveCfg = Release|Any CPU
-		{3315D5B3-E507-4B64-9A15-E6B11054C380}.Release|x64.Build.0 = Release|Any CPU
-		{3315D5B3-E507-4B64-9A15-E6B11054C380}.Release|x86.ActiveCfg = Release|Any CPU
-		{3315D5B3-E507-4B64-9A15-E6B11054C380}.Release|x86.Build.0 = Release|Any CPU
+		{3315D5B3-E507-4B64-9A15-E6B11054C380}.Release|x64.ActiveCfg = Release|x64
+		{3315D5B3-E507-4B64-9A15-E6B11054C380}.Release|x64.Build.0 = Release|x64
+		{3315D5B3-E507-4B64-9A15-E6B11054C380}.Release|x86.ActiveCfg = Release|x86
+		{3315D5B3-E507-4B64-9A15-E6B11054C380}.Release|x86.Build.0 = Release|x86
 		{6638C0D3-D5CF-44F0-B2FE-0B2F38976620}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{6638C0D3-D5CF-44F0-B2FE-0B2F38976620}.Debug|x64.ActiveCfg = Debug|x64
 		{6638C0D3-D5CF-44F0-B2FE-0B2F38976620}.Debug|x64.Build.0 = Debug|x64

@@ -5,7 +5,7 @@
 
 using namespace System;
 
-namespace BF
+namespace OSG
 {
 	namespace NET
 	{

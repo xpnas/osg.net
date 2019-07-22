@@ -1,8 +1,6 @@
 #include "Viewer3DThread.h"
 
 
-
-
 Viewer3DThread::Viewer3DThread(Viewer3DSupport* ptr)
 	: OpenThreads::Thread(), _ptr(ptr), _done(false)
 {
