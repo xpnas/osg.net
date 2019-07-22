@@ -29,19 +29,18 @@ namespace OSG
 		}
 
 		void Viewer3D::Start() {
-			//创建渲染线程并开始渲染
-			if (m_thread != nullptr)
-			{
-				delete m_thread;
-				m_thread = nullptr;
-			}
-
+			Stop();
 			m_thread = new Viewer3DThread(m_support);
 			m_thread->start();
 		}
 
 		void Viewer3D::Stop() {
-			m_thread->cancel();
+			if (m_thread != nullptr)
+			{
+				m_thread->cancel();
+				delete m_thread;
+				m_thread = nullptr;
+			}
 		}
 
 		void Viewer3D::Load(String ^ filePath)

@@ -99,7 +99,7 @@ osg::ref_ptr<osg::Group> Viewer3DSupport::createLight(osg::ref_ptr<osg::Node> no
 	//设置方向
 	light->setDirection(osg::Vec3(0.0f, 0.0f, -1.0f));
 	//设置位置
-	light->setPosition(osg::Vec4(bs.center().x(), bs.center().y(), bs.center().z() + bs.radius(), 1.0f));
+	light->setPosition(osg::Vec4(bs.center().x()+ bs.radius(), bs.center().y()+ bs.radius(), bs.center().z() + bs.radius(), 1.0f));
 	//设置环境光的颜色
 	light->setAmbient(osg::Vec4(1.0f, 1.0f, 1.0f, 1.0f));
 	//设置散射光的颜色
@@ -162,6 +162,7 @@ void Viewer3DSupport::InitCameraConfig(void)
 	traits->sharedContext = 0;
 	traits->setInheritedWindowPixelFormat = true;
 	traits->inheritedWindowData = windata;
+	traits->samples = 4;
 
 	// Create the Graphics Context
 	osg::GraphicsContext* gc = osg::GraphicsContext::createGraphicsContext(traits.get());
