@@ -21,13 +21,7 @@
     <ClInclude Include="Resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="PickHandler.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Viewer3D.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="DocumentInfo.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Viewer3DSupport.h">
@@ -44,13 +38,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="PickHandler.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="Viewer3D.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="DocumentInfo.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Viewer3DSupport.cpp">

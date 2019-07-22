@@ -7,8 +7,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3315D5B3-E507-4B64-9A15-E6B11054C380}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>BIMFashion.UI</RootNamespace>
-    <AssemblyName>BIMFashion.UI</AssemblyName>
+    <RootNamespace>OSG.UI</RootNamespace>
+    <AssemblyName>OSG.UI</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,7 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>BIMFashion.UI.Program</StartupObject>
+    <StartupObject>OSG.UI.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
@@ -88,12 +88,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Viewer3D.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Viewer3D.Designer.cs">
-      <DependentUpon>Viewer3D.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +99,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -117,9 +112,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BIMFashion.NET\BIMFashion.NET.vcxproj">
+    <ProjectReference Include="..\OSG.NET\OSG.NET.vcxproj">
       <Project>{6638c0d3-d5cf-44f0-b2fe-0b2f38976620}</Project>
-      <Name>BIMFashion.NET</Name>
+      <Name>OSG.NET</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

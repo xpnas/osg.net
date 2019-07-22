@@ -6,12 +6,13 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using OSG.NET;
 
-namespace BIMFashion.UI
+namespace OSG.UI
 {
     public partial class Test : Form
     {
-        public BF.NET.Viewer3D Viewer3D;
+        public Viewer3D Viewer3D;
 
         public Test()
         {
@@ -28,12 +29,12 @@ namespace BIMFashion.UI
         private void Test_Load(object sender, EventArgs e)
         {
             IntPtr ptr = this.splitContainer1.Panel2.Handle;
-            Viewer3D = new BF.NET.Viewer3D(ptr);
+            Viewer3D = new Viewer3D(ptr);
             Viewer3D.OnProgress += Viewer3D_OnProgress;
 
         }
 
-        private void Viewer3D_OnProgress(BF.NET.Viewer3D viewer3D, bool A_1)
+        private void Viewer3D_OnProgress(Viewer3D viewer3D, bool A_1)
         {
 
         }
@@ -48,7 +49,6 @@ namespace BIMFashion.UI
             {
                 string file = dialog.FileName;
                 Viewer3D.Load(file);
-
             }
         }
 
