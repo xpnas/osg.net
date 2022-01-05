@@ -111,11 +111,5 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\OSG.NET\OSG.NET.vcxproj">
-      <Project>{6638c0d3-d5cf-44f0-b2fe-0b2f38976620}</Project>
-      <Name>OSG.NET</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
